@@ -3,10 +3,9 @@ class ProjectsController < ApplicationController
 
   # GET /projects
   def index
-    # @projects = Project.all
-    response = { 'message' => 'ok' }.to_json
+    @projects = Project.all
 
-    render json: response
+    render json: @projects
   end
 
   # GET /projects/1
@@ -47,6 +46,6 @@ class ProjectsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def project_params
-      params.fetch(:project, {})
+      params.require(:project).permit(:title)
     end
 end
