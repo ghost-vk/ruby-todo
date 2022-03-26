@@ -5,14 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/projects_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/project.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220322125257_create_projects.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/projects.yml" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/projects.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/todos_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/todos_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/cors.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/cors.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +154,8 @@
       <workItem from="1647967030324" duration="18000" />
       <workItem from="1647967064398" duration="101000" />
       <workItem from="1647967174371" duration="36000" />
-      <workItem from="1647969211867" duration="19496000" />
+      <workItem from="1647969211867" duration="20012000" />
+      <workItem from="1648306865771" duration="517000" />
     </task>
     <servers />
   </component>
