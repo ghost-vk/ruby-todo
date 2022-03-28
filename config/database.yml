@@ -12,10 +12,6 @@ development:
   host: localhost
   port: 5432
 
-test:
-  <<: *default
-  database: todo_app_test
-
 production:
   <<: *default
   database: <%= ENV["TODO_APP_DBNAME"] %>
