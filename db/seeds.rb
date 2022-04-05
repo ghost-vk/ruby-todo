@@ -7,8 +7,10 @@ projects = config.fetch('projects')
 Project.destroy_all
 Todo.destroy_all
 
+user = User.create!(login: 'taskboard', password: 'taskb0ard', name: 'Taskboard', avatar: '/public/img/avatar/1.png')
+
 for item in projects do
-  project = Project.create!(title: item.fetch('title'))
+  project = Project.create!(title: item.fetch('title'), user_id: user[:id])
 
   todos = item.fetch('todos')
 

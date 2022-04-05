@@ -1,10 +1,12 @@
 class ProjectsController < ApplicationController
+  before_action :authorized
+  before_action :set_user_id
   before_action :set_project, only: %i[ show update destroy ]
 
   # GET /projects
   def index
-    @projects = Project.all
-
+    # @projects = Project.all
+    @projects = Project.where(:user_id => @user_id)
     render json: @projects
   end
 
@@ -15,7 +17,10 @@ class ProjectsController < ApplicationController
 
   # POST /projects
   def create
-    @project = Project.new(project_params)
+    @project = Project.new(
+      title: project_params[:title],
+      user_id: @user_id
+    )
 
     if @project.save
       render json: @project, status: :created, location: @project
@@ -42,6 +47,14 @@ class ProjectsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_project
       @project = Project.find(params[:id])
+
+      if @user_id != @project.user_id
+        render json: { status: 'error' }, status: :unauthorized
+      end
+    end
+
+    def set_user_id
+      @user_id = authorized.fetch('user_id')
     end
 
     # Only allow a list of trusted parameters through.
